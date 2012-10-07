@@ -7,5 +7,8 @@
       "stache":"0.1.0",
       "github":"0.1.6",
       "markov":"0.0.6"
+  },
+  "engines" : {
+  	"node":"0.6.18"
   }
 }
