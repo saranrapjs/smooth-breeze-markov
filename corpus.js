@@ -43,7 +43,7 @@ var sentence = function() {
     while (currentKey) {
         var next = m.next(currentKey);
         if (!next) break;
-        if (currentWord && currentWord.charAt(currentWord.length-1) == ".") break;
+        if (currentWord && currentWord.charAt(currentWord.length-1) == ("." || "?" || "!") ) break;
         currentKey = next.key;
     	currentWord = next.word;
     	if ( currentWord.toLowerCase() !== "i" && ( currentWord.length <= 3 || exceptions[currentWord.toLowerCase()] === true ) ) currentWord = currentWord.toLowerCase();
